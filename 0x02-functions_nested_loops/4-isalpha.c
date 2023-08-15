@@ -12,5 +12,5 @@ int _isalpha(int alpha)
 	if ((alpha >= 65 && alpha <= 90) || (alpha >= 97 && alpha <= 122))
 		return (1);
 	else
-		return (0)
+		return (0);
 }
