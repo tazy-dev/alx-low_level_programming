@@ -36,7 +36,7 @@ void print_to_98(int num)
 	{
 		for (i = num; i > 99; i--)
 		{
-			_putchar((i / 100) + '0')
+			_putchar((i / 100) + '0');
 			_putchar((i / 10) + '0');
 			_putchar((i % 10) + '0');
 			_putchar(',');
