@@ -10,9 +10,9 @@ int main(void)
 {
 	int i = 0;
 	unsigned long fibo1 = 0, fibo2 = 1, sum = 0;
-	bool x = true;
+	int x = 1;
 
-	while (x)
+	while (x == 1)
 	{
 		fibo2 += fibo1;
 		fibo1 = fibo2 - fibo1;
@@ -23,7 +23,7 @@ int main(void)
 				sum += fibo2;
 		}
 		else
-			x = false;
+			x = 0;
 	}
 
 	printf("%lu\n", sum);
