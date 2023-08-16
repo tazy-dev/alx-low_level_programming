@@ -8,12 +8,13 @@
  */
 int main(void)
 {
-	int i, fibo1 = 0, fibo2 = 1, sum = 0;
+	int i;
+	long fibo1 = 0, fibo2 = 1, sum = 0;
 
 	for (i = 0; i < 50; i++)
 	{
 		sum = fibo1 + fibo2;
-		printf("%d", sum);
+		printf("%l", sum);
 		fibo1 = fibo2;
 		fibo2 = sum;
 
