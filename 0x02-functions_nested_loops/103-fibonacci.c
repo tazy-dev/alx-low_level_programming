@@ -8,7 +8,6 @@
   */
 int main(void)
 {
-	int i = 0;
 	unsigned long fibo1 = 0, fibo2 = 1, sum = 0;
 	int x = 1;
 
