@@ -54,5 +54,7 @@ void print_to_98(int num)
 		_putchar('9');
 		_putchar('8');
 		_putchar('\n');
+		}
 	}
 }
+
