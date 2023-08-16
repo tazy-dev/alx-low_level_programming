@@ -13,10 +13,10 @@ void print_times_table(int num)
 
 	if (num >= 0 && num <= 15)
 	{
-		for (i = 0; i < num; i++)
+		for (i = 0; i <= num; i++)
 		{
 			_putchar('0');
-			for (j = 1; j < num; j++)
+			for (j = 1; j <= num; j++)
 			{
 				int result = i * j;
 
