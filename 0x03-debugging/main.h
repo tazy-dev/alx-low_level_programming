@@ -7,7 +7,7 @@
  * File: main.h
  * Auth: tazy-dev
  * Desc: Header file containing declarations for all functions
- *       used in the 0x02-functions_nested_loops directory.
+ *       used in the 0x03-debugging.
  */
 
 void positive_or_negative(int i);
