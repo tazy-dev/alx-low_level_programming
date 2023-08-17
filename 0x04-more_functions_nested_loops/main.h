@@ -11,4 +11,5 @@
  */
 
 int _isupper(int );
+int _isdigit(int );
 #endif /* MAIN_H */
