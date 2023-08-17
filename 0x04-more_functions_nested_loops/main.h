@@ -10,5 +10,5 @@
  *       used in the 0x04-more_functions_nested_loops.
  */
 
-int _isupper(int c);
+int _isupper(int );
 #endif /* MAIN_H */
