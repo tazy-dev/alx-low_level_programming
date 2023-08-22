@@ -24,7 +24,7 @@ int main(void)
 		putchar(password[counter] + '0');
 		if ((2772 - sum) - '0' < 100)
 		{
-			lastOne = 2772 - sum - '0';
+			lastOne = 2772 - checksum - '0';
 			checksum += lastOne;
 			putchar(lastOne + '0');
 			break;
