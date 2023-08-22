@@ -19,9 +19,9 @@ int main(void)
 
 	for (counter = 0; counter < 64; counter++)
 	{
-		pass[counter] = rand() % 100;
-		checksum += (pass[counter] + '0');
-		putchar(pass[counter] + '0');
+		password[counter] = rand() % 100;
+		checksum += (password[counter] + '0');
+		putchar(password[counter] + '0');
 		if ((2772 - sum) - '0' < 100)
 		{
 			lastOne = 2772 - sum - '0';
