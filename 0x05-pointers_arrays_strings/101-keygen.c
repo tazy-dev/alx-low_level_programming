@@ -19,10 +19,10 @@ int main(void)
 
 	for (counter = 0; counter < 64; counter++)
 	{
-		password[counter] = rand() % 78;
+		password[counter] = rand() % 97;
 		checksum += (password[counter] + '0');
 		putchar(password[counter] + '0');
-		if ((2772 - checksum) - '0' < 78)
+		if ((2772 - checksum) - '0' < 97)
 		{
 			lastOne = 2772 - checksum - '0';
 			checksum += lastOne;
