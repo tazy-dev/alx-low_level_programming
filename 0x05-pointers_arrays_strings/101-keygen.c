@@ -22,7 +22,7 @@ int main(void)
 		password[counter] = rand() % 100;
 		checksum += (password[counter] + '0');
 		putchar(password[counter] + '0');
-		if ((2772 - sum) - '0' < 100)
+		if ((2772 - checksum) - '0' < 100)
 		{
 			lastOne = 2772 - checksum - '0';
 			checksum += lastOne;
