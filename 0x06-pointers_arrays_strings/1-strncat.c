@@ -7,7 +7,7 @@
  * @src : The second string
  * @n   : The number of bytes
  *
- * Return: Value of the last digit.
+ * Return: Pointer to the concatenated String.
  */
 
 char *_strncat(char *dest, char *src, int n)
