@@ -9,14 +9,14 @@
 
 char *rot13(char *str)
 {
-	char ascii[] = "ABCDEFGHIIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] = "NOPQRSTUVWXYZABCDEFGHIIJKLMnopqrstuvwxyzabcdefghijklm";
+	char ascii[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i = 0;
 	int j;
 
 	while (str[i] != '\0')
 	{
-		for (j = 0; j != '\0'; j++)
+		for (j = 0; ascii[j] != '\0'; j++)
 			if (str[i] == ascii[j])
 			{
 				str[i] = rot[j];
