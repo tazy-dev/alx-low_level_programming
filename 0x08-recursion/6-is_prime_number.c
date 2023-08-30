@@ -11,10 +11,8 @@ int recursive_operation(int n, int divider);
 
 int is_prime_number(int n)
 {
-	if (n < 1)
+	if (n <= 1)
 		return (0);
-	if (n == 1)
-		return (1);
 	return (recursive_operation(n, 2));
 }
 
@@ -29,7 +27,7 @@ int recursive_operation(int n, int divider)
 {
 	if (n == divider)
 		return (1);
-	if (n % divider == 0 && n != divider)
+	if (n % divider == 0)
 		return (0);
 	return (recursive_operation(n, divider + 1));
 }
