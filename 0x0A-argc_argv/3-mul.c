@@ -29,7 +29,7 @@ int _atoi(char *s)
 			if (numberOfNegatives % 2 != 0)
 				singleNumber = -singleNumber;
 			totalNumber = totalNumber * 10 + singleNumber;
-			foundInt = 1
+			foundInt = 1;
 			if (s[counter + 1] < '0' || s[counter + 1] > '9')
 			{
 				foundInt = 0;
@@ -58,6 +58,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	prinf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
+	printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
 	return (0);
 }
