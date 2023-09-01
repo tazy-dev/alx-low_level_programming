@@ -29,12 +29,12 @@ int _atoi(char *s)
 			if (numberOfNegatives % 2 != 0)
 				singleNumber = -singleNumber;
 			totalNumber = totalNumber * 10 + singleNumber;
-			foundInt = 1;
 			if (s[counter + 1] < '0' || s[counter + 1] > '9')
 			{
-				foundInt = 0;
+				foundInt = 1;
 				break;
 			}
+
 		}
 	}
 	if (foundInt == 0)
