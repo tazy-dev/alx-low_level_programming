@@ -1,9 +1,9 @@
 #include <stdlib.h>
-
+#include "main.h"
 /**
  * main - prints the minimum number of coins to
  * make change for an amount of money
- * @argc: number of arguments
+i * @argc: number of arguments
  * @argv: array of arguments
  *
  * Return: 0 (Success), 1 (Error)
@@ -28,12 +28,12 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (j = 0; j < 5 && num > 0; j++)
+	for (i = 0; i < 5 && num > 0; i++)
 	{
-		while (num >= coins[j])
+		while (num >= coins[i])
 		{
 			noOfCoins++;
-			num -= coins[j];
+			num -= coins[i];
 		}
 	}
 
