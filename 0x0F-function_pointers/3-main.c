@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int ope1, ope2, result;
-	char operartion;
+	char operation;
 	int (*arithmatic)(int, int);
 
 	if (argc != 4)
@@ -30,9 +30,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	operation = argv[2];
+	operation = *argv[2];
 
-	if ((operation == '/' || operation == '%') && obe2 == 0)
+	if ((operation == '/' || operation == '%') && ope2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
