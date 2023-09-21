@@ -5,7 +5,7 @@
  * print_list - print all the elements of a
  *              list_t list
  * @h: Input singly Linked List
- * Return: The number of nodes
+ * Return: The number of nodes in List_t
  */
 size_t print_list(const list_t *h)
 {
