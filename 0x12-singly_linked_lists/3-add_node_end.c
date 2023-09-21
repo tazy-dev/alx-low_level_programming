@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <string.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * add_node_end - Add a node to the beginning of
- *              list_t list
+ *              List_t list
  * @head: A pointer to a pointer  to the list_t list
  * @str: The new string to be added
  * Return: The address of the new node
