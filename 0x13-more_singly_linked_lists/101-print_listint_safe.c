@@ -12,14 +12,14 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *next = head, *check = NULL;
+	const listint_t *next = head, *check = NULL;
 	size_t list_len = 0, check_index;
 
 	if (!head)
 		exit(98);
 	while (next)
 	{
-		printf("[%p] %lu\n", (void *)next, next->n);
+		printf("[%p] %d\n", (void *)next, next->n);
 		list_len++;
 		check_index = 0;
 		check = head;
@@ -29,7 +29,7 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			if (next == check)
 			{
-				printf("-> [%p] %lu\n", (void *)next, next->n);
+				printf("-> [%p] %d\n", (void *)next, next->n);
 				return (list_len);
 			}
 			check_index++;
